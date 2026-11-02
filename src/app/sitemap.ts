@@ -4,7 +4,7 @@ import { routing } from '@/i18n/routing';
 import { places, regions } from '@/lib/content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ['', '/regions', '/map', ...regions.map((r) => `/regions/${r.slug}`), ...places.map((p) => `/places/${p.slug}`)];
+  const paths = ['', '/regions', '/map', '/getting-around', '/quiz', '/credits', ...regions.map((r) => `/quiz/${r.slug}`), ...regions.map((r) => `/regions/${r.slug}`), ...places.map((p) => `/places/${p.slug}`)];
   return paths.map((path) => ({
     url: `${SITE.url}/${routing.defaultLocale}${path}`,
     alternates: {

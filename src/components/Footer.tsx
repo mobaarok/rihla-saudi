@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from 'next-intl/server';
 import { SITE } from '@/config/site';
 import { t } from '@/lib/content';
+import { Link } from '@/i18n/navigation';
 
 export default async function Footer() {
   const tr = await getTranslations('footer');
@@ -11,6 +12,12 @@ export default async function Footer() {
         <p className="font-display text-lg text-ink">{t(SITE.name, locale)}</p>
         <p>{tr('about')}</p>
         <p>{tr('disclaimer')}</p>
+        <nav className="flex flex-wrap gap-x-4 gap-y-1 py-2 font-medium text-ink">
+          <Link href="/search" className="hover:underline">{tr('search')}</Link>
+          <Link href="/getting-around" className="hover:underline">{tr('gettingAround')}</Link>
+          <Link href="/quiz" className="hover:underline">{tr('quiz')}</Link>
+          <Link href="/credits" className="hover:underline">{tr('credits')}</Link>
+        </nav>
         <p className="text-xs">{tr('mapData')}</p>
         <p className="text-xs">© {new Date().getFullYear()}</p>
       </div>

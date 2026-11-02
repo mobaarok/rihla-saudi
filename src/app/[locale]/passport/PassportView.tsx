@@ -7,6 +7,7 @@ import { SITE } from '@/config/site';
 import { places, regions, t } from '@/lib/content';
 import PassportMap, { useVisitedRegions } from '@/components/PassportMap';
 import { useUser } from '@/components/UserProvider';
+import { PASS_SCORE } from '@/data/quizzes';
 
 export default function PassportView() {
   const tr = useTranslations('passport');
@@ -15,6 +16,7 @@ export default function PassportView() {
   const visitedRegions = useVisitedRegions();
   const visitedPlaces = places.filter((p) => lists.visitedPlaces.includes(p.slug));
   const [copied, setCopied] = useState(false);
+  const badges = regions.filter((r) => (lists.quizScores[r.slug] ?? 0) >= PASS_SCORE);
 
   const share = async () => {
     const text = tr('shareText', {
@@ -73,6 +75,28 @@ export default function PassportView() {
           >
             {copied ? tr('copied') : tr('share')}
           </button>
+
+          <div className="rounded-2xl border border-sand-200 bg-white p-5">
+            <h2 className="mb-3 font-semibold">🏅 {tr('badges')}</h2>
+            {badges.length === 0 ? (
+              <p className="text-sm text-muted">{tr('noBadges')}</p>
+            ) : (
+              <div className="flex flex-wrap gap-2">
+                {badges.map((r) => (
+                  <span
+                    key={r.slug}
+                    className="rounded-full px-3 py-1 text-sm font-semibold text-white"
+                    style={{ backgroundColor: r.colors[0] }}
+                  >
+                    🏅 {t(r.name, locale)}
+                  </span>
+                ))}
+              </div>
+            )}
+            <Link href="/quiz" className="mt-3 inline-block text-sm font-semibold text-palm-600 hover:underline">
+              {tr('takeQuiz')} →
+            </Link>
+          </div>
 
           <div className="rounded-2xl border border-sand-200 bg-white p-5">
             <h2 className="mb-3 font-semibold">{tr('visitedPlaces')}</h2>

@@ -271,14 +271,6 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362181118.jpg"
   },
-  "ithra": {
-    "src": "/photos/ithra.webp",
-    "title": "File:King Abdulaziz Center for World Culture 36.jpg",
-    "credit": "Ashashyou",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:King_Abdulaziz_Center_for_World_Culture_36.jpg"
-  },
   "jabal-aja": {
     "src": "/photos/jabal-aja.webp",
     "title": "File:الغطاء النباتي حول جبال أجا بمنطقة حائل.jpg",
@@ -500,13 +492,6 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Red_Sea_at_Umm_Lajj,_Saudi_Arabia_(26).jpg"
-  },
-  "unaizah-old-town": {
-    "src": "/photos/unaizah-old-town.webp",
-    "title": "File:Unaizah View.jpg",
-    "credit": "Meshal Obeidallah at en.wikipedia",
-    "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Unaizah_View.jpg"
   },
   "uqair-port": {
     "src": "/photos/uqair-port.webp",

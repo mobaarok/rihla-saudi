@@ -5,6 +5,7 @@ import PlaceCard from '@/components/PlaceCard';
 import RegionCard from '@/components/RegionCard';
 import PassportMap from '@/components/PassportMap';
 import { patternBg } from '@/lib/style';
+import SearchBox from '@/components/SearchBox';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -22,7 +23,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </p>
             <h1 className="font-display text-4xl font-semibold leading-tight md:text-5xl">{tr('title')}</h1>
             <p className="mt-5 max-w-xl text-lg text-white/85">{tr('subtitle')}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 max-w-md">
+              <SearchBox variant="hero" />
+            </div>
+            <div className="mt-5 flex flex-wrap gap-3">
               <Link href="/regions" className="rounded-full bg-white px-6 py-3 font-semibold text-palm-700 hover:bg-sand-100">
                 {tr('ctaExplore')}
               </Link>

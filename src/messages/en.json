@@ -12,7 +12,10 @@
     "signIn": "Sign in",
     "profile": "Profile",
     "language": "العربية",
-    "menu": "Menu"
+    "menu": "Menu",
+    "search": "Search",
+    "gettingAround": "Getting around",
+    "quiz": "Quizzes"
   },
   "home": {
     "eyebrow": "13 regions · {count} places",
@@ -89,7 +92,10 @@
     "noPlaces": "You haven't marked any places yet. Open a place and tap “I've been here”.",
     "share": "Copy my progress",
     "copied": "Copied!",
-    "shareText": "I've visited {regions} of 13 regions and {places} places in Saudi Arabia on {site}!"
+    "shareText": "I've visited {regions} of 13 regions and {places} places in Saudi Arabia on {site}!",
+    "badges": "Quiz badges",
+    "noBadges": "No badges yet. Pass a region quiz to earn one.",
+    "takeQuiz": "Take a quiz"
   },
   "saved": {
     "title": "Saved places",
@@ -119,7 +125,11 @@
   "footer": {
     "about": "An independent travel guide to Saudi Arabia.",
     "disclaimer": "Information is a guide only. Always check official sources before you travel.",
-    "mapData": "Region boundaries: Natural Earth. Map tiles: © OpenStreetMap contributors, © CARTO."
+    "mapData": "Region boundaries: Natural Earth. Map tiles: © OpenStreetMap contributors, © CARTO.",
+    "credits": "Photo credits",
+    "gettingAround": "Getting around",
+    "search": "Search",
+    "quiz": "Quizzes"
   },
   "notFound": {
     "title": "Page not found",
@@ -143,5 +153,69 @@
     "4x4": "4x4 or tour needed",
     "guided": "Only with a guided tour",
     "ferry": "By ferry"
+  },
+  "search": {
+    "title": "Search",
+    "subtitle": "Find places and regions by name, type or area.",
+    "placeholder": "Search places, e.g. AlUla, beach, fort…",
+    "results": "{count, plural, =0 {No results} one {# result} other {# results}}",
+    "none": "Nothing found. Try another word, or browse by region.",
+    "hint": "Try “castle”, “mountains”, “Jeddah” or “UNESCO”.",
+    "region": "Region"
+  },
+  "credits": {
+    "title": "Photo credits",
+    "subtitle": "Thank you to the photographers who share their work freely.",
+    "photosText": "Place photos come from Wikimedia Commons and are used under their free licences (Creative Commons or public domain). Photos have been resized. Click a licence to read it, or a source to see the original.",
+    "mapText": "Region boundaries are from Natural Earth (public domain). Map tiles are © OpenStreetMap contributors and © CARTO."
+  },
+  "transport": {
+    "title": "Getting around Saudi Arabia",
+    "subtitle": "Flights, trains, buses, taxis and driving: how to travel between cities and regions.",
+    "onThisPage": "On this page",
+    "verify": "Routes, timetables and rules change. Check with the airline, train operator or official sites before you travel.",
+    "airportsTitle": "Airports by region",
+    "region": "Region",
+    "city": "City",
+    "airport": "Airport",
+    "code": "Code",
+    "distancesTitle": "Driving distances",
+    "distancesNote": "Approximate road distances. Allow extra time for mountain roads.",
+    "km": "~{km} km",
+    "byRegion": "Getting there, region by region",
+    "gettingThere": "Getting there",
+    "flyInto": "Fly into",
+    "train": "Train",
+    "localTravel": "Getting around",
+    "localTravelText": "Most places are best reached by car, taxi or ride-hailing app. For desert and off-road sites, join a tour.",
+    "fullGuide": "Full transport guide"
+  },
+  "quiz": {
+    "title": "Saudi Arabia quizzes",
+    "subtitle": "How well do you know each region? Test yourself and earn passport badges.",
+    "howItWorks": "Each quiz has {total} questions. Score {pass} or more to earn the region's badge.",
+    "earned": "{count, plural, =0 {No badges yet.} one {You have # of {total} badges.} other {You have # of {total} badges.}}",
+    "regionTitle": "{region} quiz",
+    "intro": "{total} quick questions. Answers are explained as you go.",
+    "allQuizzes": "All quizzes",
+    "progress": "Question {n} of {total}",
+    "best": "Best: {score}/{total}",
+    "notTried": "Not tried yet",
+    "correct": "Correct!",
+    "wrong": "Not quite.",
+    "next": "Next question",
+    "finish": "See my score",
+    "yourScore": "You scored {score} out of {total}",
+    "passed": "You earned the {region} badge for your passport!",
+    "failed": "Score {pass} or more to earn the badge. Read up and try again!",
+    "signInToKeep": "Sign in to keep your scores and badges on every device.",
+    "tryAgain": "Try again",
+    "moreQuizzes": "More quizzes",
+    "seeBadge": "See my passport",
+    "readAbout": "Read about {region}",
+    "badge": "Badge earned",
+    "cardTitle": "Test your knowledge",
+    "cardText": "Answer {total} questions about this region. Score {pass}+ to earn a passport badge.",
+    "start": "Start the quiz"
   }
 }
