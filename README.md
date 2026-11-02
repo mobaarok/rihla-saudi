@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 (it redirects to /en/ or /ar/).
+Open http://localhost:3000.
 
 ## Firebase setup (one time)
 
@@ -69,24 +69,24 @@ One document per user at `users/{uid}`:
 
 ## Deploy
 
-The site is exported as static files (`npm run build` writes them to `out/`), so it can be hosted anywhere.
+### GitHub Pages
 
-### GitHub Pages (set up)
+The live preview at **https://mobaarok.github.io/rihla-saudi/** is published from the **`gh-pages` branch**, which holds the GitHub Pages-only changes (static export, base path, deploy workflow). Keep working on `main`, then publish with:
 
-Every push to `main` builds and publishes the site with `.github/workflows/deploy.yml`:
+```bash
+git checkout gh-pages
+git merge main
+git push
+git checkout main
+```
 
-**https://mobaarok.github.io/rihla-saudi/**
+### Vercel (free, for your own domain later)
 
-For sign-in to work there, add `mobaarok.github.io` to Firebase **Authentication → Settings → Authorized domains**.
-
-### Your own domain later
-
-When you buy a domain, you can point it at GitHub Pages (repo **Settings → Pages → Custom domain**) or host the `out/` folder on Firebase Hosting, Vercel or Netlify. Then:
-
-1. Remove `NEXT_PUBLIC_BASE_PATH` from the workflow, because a custom domain has no `/rihla-saudi` path.
-2. Set `NEXT_PUBLIC_SITE_URL` to the new domain.
-3. Add the domain to Firebase **Authorized domains**.
-4. Submit `https://YOUR-DOMAIN/sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
+1. Push this repo to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repo. No settings are needed, because `.env` is read automatically.
+3. After the first deploy, set `NEXT_PUBLIC_SITE_URL` to your real domain in Vercel → Settings → Environment Variables, then redeploy.
+4. Add the domain to Firebase **Authorized domains** (step 2 above).
+5. Submit `https://YOUR-DOMAIN/sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
 
 ## Editing content
 
