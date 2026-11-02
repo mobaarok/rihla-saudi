@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand-50: #fbf8f3;
+  --color-sand-100: #f5efe4;
+  --color-sand-200: #ebe0cc;
+  --color-sand-300: #dccaa8;
+  --color-ink: #1f1a14;
+  --color-muted: #6b6152;
+  --color-palm-500: #1f7a55;
+  --color-palm-600: #17633f;
+  --color-palm-700: #114d31;
+  --color-dune-500: #c8662b;
+  --color-dune-600: #a9511f;
+
+  --font-sans: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-serif), var(--font-arabic), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-sand-50);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Arabic reads better with a bit more line height and the Arabic font first. */
+html[lang='ar'] body {
+  font-family: var(--font-arabic), var(--font-latin), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.8;
+}
+html[lang='ar'] .font-display {
+  font-family: var(--font-arabic), serif;
+  font-weight: 700;
+}
+
+.leaflet-container {
+  font-family: inherit;
+}

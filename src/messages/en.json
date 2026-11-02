@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "tagline": "Discover the hidden places of Saudi Arabia",
+    "description": "A travel guide to Saudi Arabia's 13 regions: heritage sites, mountains, deserts and coastlines. Track the places you visit on your own travel passport."
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "map": "Map",
+    "passport": "Passport",
+    "saved": "Saved",
+    "signIn": "Sign in",
+    "profile": "Profile",
+    "language": "العربية",
+    "menu": "Menu"
+  },
+  "home": {
+    "eyebrow": "13 regions · {count} places",
+    "title": "Discover the Saudi Arabia most travellers never see",
+    "subtitle": "Ancient tombs, painted mountain villages, coral islands and endless desert. Plan your trip, save places and colour in your travel passport as you go.",
+    "ctaExplore": "Explore regions",
+    "ctaPassport": "Open my passport",
+    "featured": "Places to start with",
+    "regionsTitle": "Explore by region",
+    "regionsSubtitle": "From the Red Sea to the Gulf, every region has its own character.",
+    "passportTitle": "Your travel passport",
+    "passportText": "Mark the places you visit and watch your map of Saudi Arabia fill with colour. Sign in to keep it safe across all your devices.",
+    "seeAll": "See all"
+  },
+  "regions": {
+    "title": "Explore Saudi Arabia",
+    "subtitle": "Choose a region to see its places.",
+    "capital": "Capital: {name}",
+    "places": "{count, plural, =0 {No places yet} one {# place} other {# places}}",
+    "allRegions": "All regions",
+    "placesIn": "Places in {name}",
+    "empty": "We are still writing about this region. Check back soon."
+  },
+  "place": {
+    "bestTime": "Best time to visit",
+    "region": "Region",
+    "location": "Location",
+    "openInMaps": "Open in Google Maps",
+    "unesco": "UNESCO World Heritage Site",
+    "save": "Save",
+    "saved": "Saved",
+    "markVisited": "I've been here",
+    "visited": "Visited",
+    "more": "More in {name}",
+    "approx": "Map location is approximate.",
+    "verify": "Details can change. Check opening times, prices and access with official sources before you travel."
+  },
+  "category": {
+    "all": "All",
+    "heritage": "Heritage",
+    "nature": "Nature",
+    "mountains": "Mountains",
+    "coast": "Coast",
+    "city": "City",
+    "culture": "Culture"
+  },
+  "map": {
+    "title": "Map of places",
+    "subtitle": "Every place in the guide on one map. Tap a pin to open it."
+  },
+  "passport": {
+    "title": "My travel passport",
+    "subtitle": "Tap a region to mark it as visited. Regions also fill in when you mark a place there as visited.",
+    "regionsVisited": "Regions visited",
+    "placesVisited": "Places visited",
+    "notSignedIn": "You are not signed in, so your passport is only saved in this browser.",
+    "signInToSave": "Sign in to save it",
+    "legendVisited": "Visited",
+    "legendNotVisited": "Not visited yet",
+    "visitedPlaces": "Places you've visited",
+    "noPlaces": "You haven't marked any places yet. Open a place and tap “I've been here”.",
+    "share": "Copy my progress",
+    "copied": "Copied!",
+    "shareText": "I've visited {regions} of 13 regions and {places} places in Saudi Arabia on {site}!"
+  },
+  "saved": {
+    "title": "Saved places",
+    "subtitle": "Places you want to visit.",
+    "empty": "Nothing saved yet. Tap the heart on any place to save it here."
+  },
+  "auth": {
+    "title": "Sign in",
+    "subtitle": "Save places and keep your travel passport on every device.",
+    "google": "Continue with Google",
+    "or": "or",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "switchToSignUp": "New here? Create an account",
+    "switchToSignIn": "Already have an account? Sign in",
+    "notConfigured": "Sign-in is not set up yet. Add your Firebase keys to .env.local (see README).",
+    "error": "Something went wrong. Please check your details and try again.",
+    "signOut": "Sign out"
+  },
+  "profile": {
+    "title": "My profile",
+    "member": "Signed in as {email}",
+    "stats": "Your travels"
+  },
+  "footer": {
+    "about": "An independent travel guide to Saudi Arabia.",
+    "disclaimer": "Information is a guide only. Always check official sources before you travel.",
+    "mapData": "Region boundaries: Natural Earth. Map tiles: © OpenStreetMap contributors, © CARTO."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}
