@@ -1,0 +1,536 @@
+{
+  "aarif-fort": {
+    "src": "/photos/aarif-fort.webp",
+    "title": "File:View of Aarif Fort, Hail, Saudi.jpg",
+    "credit": "Iain Cheyne",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Aarif_Fort,_Hail,_Saudi.jpg"
+  },
+  "abha-dam-lake": {
+    "src": "/photos/abha-dam-lake.webp",
+    "title": "File:Abha- Saudi Arabia- The dam (2518042213).jpg",
+    "credit": "marviikad from Al Khobar, Saudi Arabia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Abha-_Saudi_Arabia-_The_dam_(2518042213).jpg"
+  },
+  "al-atawlah-village": {
+    "src": "/photos/al-atawlah-village.webp",
+    "title": "File:قرية الأطاولة التراثية.jpg",
+    "credit": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A3%D8%B7%D8%A7%D9%88%D9%84%D8%A9_%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%D8%A9.jpg"
+  },
+  "al-birk": {
+    "src": "/photos/al-birk.webp",
+    "title": "File:Al Birk Saudi Arabia - panoramio.jpg",
+    "credit": "‫الحسن هادي منجحي‬‎",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Birk_Saudi_Arabia_-_panoramio.jpg"
+  },
+  "al-ghat-heritage-village": {
+    "src": "/photos/al-ghat-heritage-village.webp",
+    "title": "File:Old town of Al-Ghat, Saudi Arabia (2).jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_town_of_Al-Ghat,_Saudi_Arabia_(2).jpg"
+  },
+  "al-hada-taif": {
+    "src": "/photos/al-hada-taif.webp",
+    "title": "File:حصاد الورد الطائفي في السعودية سنة 2026م.jpg",
+    "credit": "وكالة الأنباء السعودية",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%AD%D8%B5%D8%A7%D8%AF_%D8%A7%D9%84%D9%88%D8%B1%D8%AF_%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D9%81%D9%8A_%D9%81%D9%8A_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9_%D8%B3%D9%86%D8%A9_2026%D9%85.jpg"
+  },
+  "al-muftaha-village": {
+    "src": "/photos/al-muftaha-village.webp",
+    "title": "File:المفتاحة1.jpg",
+    "credit": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D9%85%D9%81%D8%AA%D8%A7%D8%AD%D8%A91.jpg"
+  },
+  "al-murabba-palace": {
+    "src": "/photos/al-murabba-palace.webp",
+    "title": "File:Murabba Palace (1).jpg",
+    "credit": "Radosław Botev",
+    "license": "CC BY 3.0 pl",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Murabba_Palace_(1).jpg"
+  },
+  "al-qarah-mountain": {
+    "src": "/photos/al-qarah-mountain.webp",
+    "title": "File:Al-Qarah Mountain, Saudi Arabia.jpg",
+    "credit": "Dr. Ondřej Havelka (cestovatel)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al-Qarah_Mountain,_Saudi_Arabia.jpg"
+  },
+  "al-rajajil": {
+    "src": "/photos/al-rajajil.webp",
+    "title": "File:Rajajil column with engravings.jpg",
+    "credit": "Clemens Schmillen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rajajil_column_with_engravings.jpg"
+  },
+  "al-shafa": {
+    "src": "/photos/al-shafa.webp",
+    "title": "File:View from Al Shafa Road - Taif (7833873918).jpg",
+    "credit": "Basheer Olakara",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:View_from_Al_Shafa_Road_-_Taif_(7833873918).jpg"
+  },
+  "al-shinanah-tower": {
+    "src": "/photos/al-shinanah-tower.webp",
+    "title": "File:Shinana Tower, near al-Rass, Qasim, ca. 1700 (2) (49316029283).jpg",
+    "credit": "Richard Mortel from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shinana_Tower,_near_al-Rass,_Qasim,_ca._1700_(2)_(49316029283).jpg"
+  },
+  "al-ukhdood": {
+    "src": "/photos/al-ukhdood.webp",
+    "title": "File:AlUkhdood Village 04.jpg",
+    "credit": "Mohammad Umair Yaqub",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AlUkhdood_Village_04.jpg"
+  },
+  "al-wahbah-crater": {
+    "src": "/photos/al-wahbah-crater.webp",
+    "title": "File:Wahbah Crater.jpg",
+    "credit": "SariSabban",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wahbah_Crater.jpg"
+  },
+  "alula-old-town": {
+    "src": "/photos/alula-old-town.webp",
+    "title": "File:Al Ula old town, Saudi Arabia 2011.jpg",
+    "credit": "Pteropus conspicillatus",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Ula_old_town,_Saudi_Arabia_2011.jpg"
+  },
+  "an-namas": {
+    "src": "/photos/an-namas.webp",
+    "title": "File:Al-Namas old town, Asir Region, Saudi Arabia.jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al-Namas_old_town,_Asir_Region,_Saudi_Arabia.jpg"
+  },
+  "at-turaif-diriyah": {
+    "src": "/photos/at-turaif-diriyah.webp",
+    "title": "File:Saudi Ardha (Najdi Sword Dance) in At-Turaif district, Diriyah, Saudi Arabia.jpg",
+    "credit": "Ahad.F",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Saudi_Ardha_(Najdi_Sword_Dance)_in_At-Turaif_district,_Diriyah,_Saudi_Arabia.jpg"
+  },
+  "badr": {
+    "src": "/photos/badr.webp",
+    "title": "File:Battlefield of Badr.jpg",
+    "credit": "AndLikeThings",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Battlefield_of_Badr.jpg"
+  },
+  "dhee-ain-village": {
+    "src": "/photos/dhee-ain-village.webp",
+    "title": "File:ذوعين.jpg",
+    "credit": "Rbmq",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%B0%D9%88%D8%B9%D9%8A%D9%86.jpg"
+  },
+  "dumat-al-jandal": {
+    "src": "/photos/dumat-al-jandal.webp",
+    "title": "File:Marid Castle, Dumat al-Jandal, Saudi Arabia, ca. 1st cent. CE (2).jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marid_Castle,_Dumat_al-Jandal,_Saudi_Arabia,_ca._1st_cent._CE_(2).jpg"
+  },
+  "edge-of-the-world": {
+    "src": "/photos/edge-of-the-world.webp",
+    "title": "File:Edge of the world (6524166121).jpg",
+    "credit": "Sammy Six",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Edge_of_the_world_(6524166121).jpg"
+  },
+  "elephant-rock": {
+    "src": "/photos/elephant-rock.webp",
+    "title": "File:Elephant rock, Al-'Ula.jpg",
+    "credit": "Uhooep",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Elephant_rock,_Al-%27Ula.jpg"
+  },
+  "empty-quarter": {
+    "src": "/photos/empty-quarter.webp",
+    "title": "File:Rub al Khali 002.JPG",
+    "credit": "Nepenthes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rub_al_Khali_002.JPG"
+  },
+  "fakieh-aquarium": {
+    "src": "/photos/fakieh-aquarium.webp",
+    "title": "File:Fakieh Aquarium (9).jpg",
+    "credit": "Radosław Botev",
+    "license": "CC BY 3.0 pl",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Fakieh_Aquarium_(9).jpg"
+  },
+  "farasan-islands": {
+    "src": "/photos/farasan-islands.webp",
+    "title": "File:Farasan Islands.jpg",
+    "credit": "https://www.flickr.com/people/26116471@N03 Wajahat Mahmood",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Farasan_Islands.jpg"
+  },
+  "fifa-mountains": {
+    "src": "/photos/fifa-mountains.webp",
+    "title": "File:Clouds Embrace Fayfa Mountains in Jazan (2025).jpg",
+    "credit": "Saudi Press Agency (SPA)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Clouds_Embrace_Fayfa_Mountains_in_Jazan_(2025).jpg"
+  },
+  "habala": {
+    "src": "/photos/habala.webp",
+    "title": "File:Living on the verge of Habala Valley.jpg",
+    "credit": "Wajahatmr",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Living_on_the_verge_of_Habala_Valley.jpg"
+  },
+  "haql-beach": {
+    "src": "/photos/haql-beach.webp",
+    "title": "File:Al Haql R01.jpg",
+    "credit": "Marc Ryckaert",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Haql_R01.jpg"
+  },
+  "hegra": {
+    "src": "/photos/hegra.webp",
+    "title": "File:Qasr al-Farid, a 1st-century AD Nabatean unfinished tomb carved into a giant boulder in Hegra (Mada'in Salih), the kingdom's second Nabatean capital after Petra, Saudi Arabia - 53534952258.jpg",
+    "credit": "Following Hadrian",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Qasr_al-Farid,_a_1st-century_AD_Nabatean_unfinished_tomb_carved_into_a_giant_boulder_in_Hegra_(Mada%27in_Salih),_the_kingdom%27s_second_Nabatean_capital_after_Petra,_Saudi_Arabia_-_53534952258.jpg"
+  },
+  "hejaz-railway-madinah": {
+    "src": "/photos/hejaz-railway-madinah.webp",
+    "title": "File:Medina Railway Station 2016.jpg",
+    "credit": "الدبوني",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Medina_Railway_Station_2016.jpg"
+  },
+  "hejaz-railway-tabuk": {
+    "src": "/photos/hejaz-railway-tabuk.webp",
+    "title": "File:Hejaz Railway Station of Tabuk - museum.jpg",
+    "credit": "Clemens Schmillen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hejaz_Railway_Station_of_Tabuk_-_museum.jpg"
+  },
+  "hima-rock-art": {
+    "src": "/photos/hima-rock-art.webp",
+    "title": "File:Inscriptions of Hima mountain1.jpg",
+    "credit": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Inscriptions_of_Hima_mountain1.jpg"
+  },
+  "hisma-desert": {
+    "src": "/photos/hisma-desert.webp",
+    "title": "File:Hisma Desert2.jpg",
+    "credit": "Clemens Schmillen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hisma_Desert2.jpg"
+  },
+  "historic-jeddah": {
+    "src": "/photos/historic-jeddah.webp",
+    "title": "File:Old Jeddah - 55362181118.jpg",
+    "credit": "xiquinhosilva",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Jeddah_-_55362181118.jpg"
+  },
+  "jabal-aja": {
+    "src": "/photos/jabal-aja.webp",
+    "title": "File:الغطاء النباتي حول جبال أجا بمنطقة حائل.jpg",
+    "credit": "وكالة الأنباء السعودية",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%BA%D8%B7%D8%A7%D8%A1_%D8%A7%D9%84%D9%86%D8%A8%D8%A7%D8%AA%D9%8A_%D8%AD%D9%88%D9%84_%D8%AC%D8%A8%D8%A7%D9%84_%D8%A3%D8%AC%D8%A7_%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9_%D8%AD%D8%A7%D8%A6%D9%84.jpg"
+  },
+  "jabal-al-nour": {
+    "src": "/photos/jabal-al-nour.webp",
+    "title": "File:Jabal al-Nour And cave Hira.jpg",
+    "credit": "Sadath i",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jabal_al-Nour_And_cave_Hira.jpg"
+  },
+  "jawatha-mosque": {
+    "src": "/photos/jawatha-mosque.webp",
+    "title": "File:Jawatha Mosque 1.jpg",
+    "credit": "FShbib",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jawatha_Mosque_1.jpg"
+  },
+  "jeddah-corniche": {
+    "src": "/photos/jeddah-corniche.webp",
+    "title": "File:Jeddah Corniche at night.jpg",
+    "credit": "Joseph Azrak",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jeddah_Corniche_at_night.jpg"
+  },
+  "jubbah-rock-art": {
+    "src": "/photos/jubbah-rock-art.webp",
+    "title": "File:Ibex, Jubbah rock art site, Saudi Arabia.jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ibex,_Jubbah_rock_art_site,_Saudi_Arabia.jpg"
+  },
+  "khaybar": {
+    "src": "/photos/khaybar.webp",
+    "title": "File:Khaybar - fortress Qamus (2).jpg",
+    "credit": "Hardscarf",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Khaybar_-_fortress_Qamus_(2).jpg"
+  },
+  "khobar-corniche": {
+    "src": "/photos/khobar-corniche.webp",
+    "title": "File:Fishermen along khobar Corniche (2914401909).jpg",
+    "credit": "marviikad from Al Khobar, Saudi Arabia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fishermen_along_khobar_Corniche_(2914401909).jpg"
+  },
+  "kingdom-centre-sky-bridge": {
+    "src": "/photos/kingdom-centre-sky-bridge.webp",
+    "title": "File:Riyadh Skyline.jpg",
+    "credit": "B.alotaby",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg"
+  },
+  "maraya": {
+    "src": "/photos/maraya.webp",
+    "title": "File:Al Ula 9.jpg",
+    "credit": "Nesma &amp; Partners",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Ula_9.jpg"
+  },
+  "masjid-al-haram": {
+    "src": "/photos/masjid-al-haram.webp",
+    "title": "File:Masjid al-Haram 2022.jpg",
+    "credit": "مريم محمد الغلبان",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Masjid_al-Haram_2022.jpg"
+  },
+  "masmak-fortress": {
+    "src": "/photos/masmak-fortress.webp",
+    "title": "File:Masmak castle.jpg",
+    "credit": "Baptiste Marcel",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Masmak_castle.jpg"
+  },
+  "mount-uhud": {
+    "src": "/photos/mount-uhud.webp",
+    "title": "File:Mount Uhud.JPG",
+    "credit": "Adiput (talk)",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mount_Uhud.JPG"
+  },
+  "najran-valley-dam": {
+    "src": "/photos/najran-valley-dam.webp",
+    "title": "File:Wadi najran dam.jpg",
+    "credit": "Retlaw Snellac Photography",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wadi_najran_dam.jpg"
+  },
+  "national-museum-riyadh": {
+    "src": "/photos/national-museum-riyadh.webp",
+    "title": "File:National Museum Riyadh (6781660229).jpg",
+    "credit": "Sammy Six",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:National_Museum_Riyadh_(6781660229).jpg"
+  },
+  "obhur": {
+    "src": "/photos/obhur.webp",
+    "title": "File:Obhur Jeddah 2.jpg",
+    "credit": "Tahir mq",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Obhur_Jeddah_2.jpg"
+  },
+  "prophets-mosque": {
+    "src": "/photos/prophets-mosque.webp",
+    "title": "File:Al Masjid an Nabawi 3.jpg",
+    "credit": "Aymanzaid2",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Al_Masjid_an_Nabawi_3.jpg"
+  },
+  "qasr-ibrahim": {
+    "src": "/photos/qasr-ibrahim.webp",
+    "title": "File:Ibrahim's palace in the city of Hofuf in Al-Ahsa.jpg",
+    "credit": "Lawrence of Arabia",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ibrahim%27s_palace_in_the_city_of_Hofuf_in_Al-Ahsa.jpg"
+  },
+  "qishlah-palace": {
+    "src": "/photos/qishlah-palace.webp",
+    "title": "File:Qishlah 2.jpg",
+    "credit": "saudipics",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Qishlah_2.jpg"
+  },
+  "quba-mosque": {
+    "src": "/photos/quba-mosque.webp",
+    "title": "File:Quba Mosque (2024).jpg",
+    "credit": "Kaliper1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Quba_Mosque_(2024).jpg"
+  },
+  "red-sand-dunes": {
+    "src": "/photos/red-sand-dunes.webp",
+    "title": "File:Khurais Red Sand Dunes.jpg",
+    "credit": "Arif917",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Khurais_Red_Sand_Dunes.jpg"
+  },
+  "rijal-almaa": {
+    "src": "/photos/rijal-almaa.webp",
+    "title": "File:Rijal Almaa village 2021.jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rijal_Almaa_village_2021.jpg"
+  },
+  "seven-mosques": {
+    "src": "/photos/seven-mosques.webp",
+    "title": "File:Sab'u Masajid.jpg",
+    "credit": "Imam Khairul Annas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sab%27u_Masajid.jpg"
+  },
+  "shubra-palace": {
+    "src": "/photos/shubra-palace.webp",
+    "title": "File:Shubra Palace, 1905, al-Taif, Saudi Arabia.jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shubra_Palace,_1905,_al-Taif,_Saudi_Arabia.jpg"
+  },
+  "souq-al-zal": {
+    "src": "/photos/souq-al-zal.webp",
+    "title": "File:Incense souk in downtown Riyadh (12754047044).jpg",
+    "credit": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Incense_souk_in_downtown_Riyadh_(12754047044).jpg"
+  },
+  "tabuk-castle": {
+    "src": "/photos/tabuk-castle.webp",
+    "title": "File:قلعة تبوك.jpg",
+    "credit": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%B9%D8%A9_%D8%AA%D8%A8%D9%88%D9%83.jpg"
+  },
+  "tarout-castle": {
+    "src": "/photos/tarout-castle.webp",
+    "title": "File:واجهة-قلعة-تاروت.jpg",
+    "credit": "Mustafa Al-Elq",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D9%82%D9%84%D8%B9%D8%A9-%D8%AA%D8%A7%D8%B1%D9%88%D8%AA.jpg"
+  },
+  "tayma": {
+    "src": "/photos/tayma.webp",
+    "title": "File:Tayma horseman.jpg",
+    "credit": "Nabataeus",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tayma_horseman.jpg"
+  },
+  "umluj": {
+    "src": "/photos/umluj.webp",
+    "title": "File:Red Sea at Umm Lajj, Saudi Arabia (26).jpg",
+    "credit": "Richard Mortel",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Sea_at_Umm_Lajj,_Saudi_Arabia_(26).jpg"
+  },
+  "uqair-port": {
+    "src": "/photos/uqair-port.webp",
+    "title": "File:Uqair port.jpg",
+    "credit": "saudipics",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Uqair_port.jpg"
+  },
+  "wadi-disah": {
+    "src": "/photos/wadi-disah.webp",
+    "title": "File:Wadi al-Disah1.jpg",
+    "credit": "Clemens Schmillen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wadi_al-Disah1.jpg"
+  },
+  "wadi-hanifah": {
+    "src": "/photos/wadi-hanifah.webp",
+    "title": "File:Lake at Wadi Hanifah (5218227168).jpg",
+    "credit": "Peter Dowley from Dubai, United Arab Emirates",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_at_Wadi_Hanifah_(5218227168).jpg"
+  },
+  "yanbu-historic-district": {
+    "src": "/photos/yanbu-historic-district.webp",
+    "title": "File:House of the Roshan.jpg",
+    "credit": "Fawaz alsharif",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:House_of_the_Roshan.jpg"
+  },
+  "zabal-castle": {
+    "src": "/photos/zabal-castle.webp",
+    "title": "File:زعبل.jpg",
+    "credit": "Heritage Commission",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D8%B2%D8%B9%D8%A8%D9%84.jpg"
+  }
+}

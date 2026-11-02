@@ -17,6 +17,8 @@ export default function Header() {
   const links = [
     { href: '/regions', label: tr('explore') },
     { href: '/map', label: tr('map') },
+    { href: '/getting-around', label: tr('gettingAround') },
+    { href: '/quiz', label: tr('quiz') },
     { href: '/passport', label: tr('passport') },
     { href: '/saved', label: tr('saved') },
   ];
@@ -33,12 +35,12 @@ export default function Header() {
           {locale === 'ar' ? SITE.name.ar : SITE.name.en}
         </Link>
 
-        <nav className="ms-auto hidden items-center gap-1 md:flex">
+        <nav className="ms-auto hidden items-center gap-0.5 lg:flex">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
+              className={`whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition ${
                 isActive(l.href) ? 'bg-palm-600 text-white' : 'text-ink hover:bg-sand-200'
               }`}
             >
@@ -47,7 +49,19 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="ms-auto flex items-center gap-2 md:ms-2">
+        <div className="ms-auto flex items-center gap-2 lg:ms-2">
+          <Link
+            href="/search"
+            aria-label={tr('search')}
+            className={`grid h-9 w-9 place-items-center rounded-full transition ${
+              isActive('/search') ? 'bg-palm-600 text-white' : 'hover:bg-sand-200'
+            }`}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" strokeLinecap="round" />
+            </svg>
+          </Link>
           <Link
             href={pathname}
             locale={otherLocale}
@@ -64,7 +78,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
-            className="rounded-full p-2 hover:bg-sand-200 md:hidden"
+            className="rounded-full p-2 hover:bg-sand-200 lg:hidden"
             aria-label={tr('menu')}
             aria-expanded={open}
           >
@@ -76,7 +90,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-sand-200 px-4 py-3 md:hidden">
+        <nav className="border-t border-sand-200 px-4 py-3 lg:hidden">
           {[...links, { href: user ? '/profile' : '/login', label: user ? tr('profile') : tr('signIn') }].map((l) => (
             <Link
               key={l.href}

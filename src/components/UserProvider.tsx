@@ -2,15 +2,17 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { onAuthStateChanged, signOut as fbSignOut, type User } from 'firebase/auth';
-import { arrayRemove, arrayUnion, doc, onSnapshot, serverTimestamp, setDoc } from 'firebase/firestore';
+import { arrayRemove, arrayUnion, doc, getDoc, onSnapshot, serverTimestamp, setDoc } from 'firebase/firestore';
 import { auth, db } from '@/lib/firebase';
 
 export type UserLists = {
   saved: string[];
   visitedPlaces: string[];
   visitedRegions: string[];
+  /** Best quiz score per region slug. */
+  quizScores: Record<string, number>;
 };
-type ListKey = keyof UserLists;
+type ListKey = 'saved' | 'visitedPlaces' | 'visitedRegions';
 
 type Ctx = {
   user: User | null;
@@ -18,10 +20,11 @@ type Ctx = {
   lists: UserLists;
   has: (key: ListKey, id: string) => boolean;
   toggle: (key: ListKey, id: string) => Promise<void>;
+  saveQuizScore: (region: string, score: number) => Promise<void>;
   signOut: () => Promise<void>;
 };
 
-const EMPTY: UserLists = { saved: [], visitedPlaces: [], visitedRegions: [] };
+const EMPTY: UserLists = { saved: [], visitedPlaces: [], visitedRegions: [], quizScores: {} };
 const LOCAL_KEY = 'rihla:lists';
 
 function readLocal(): UserLists {
@@ -73,24 +76,33 @@ export function UserProvider({ children }: { children: ReactNode }) {
     if (!user || !db) return;
     const ref = doc(db, 'users', user.uid);
     const local = readLocal();
-    const hasLocal = local.saved.length + local.visitedPlaces.length + local.visitedRegions.length > 0;
+    const hasLocal =
+      local.saved.length + local.visitedPlaces.length + local.visitedRegions.length + Object.keys(local.quizScores).length > 0;
 
-    setDoc(
-      ref,
-      {
-        displayName: user.displayName ?? null,
-        email: user.email ?? null,
-        updatedAt: serverTimestamp(),
-        ...(hasLocal && {
-          saved: arrayUnion(...local.saved),
-          visitedPlaces: arrayUnion(...local.visitedPlaces),
-          visitedRegions: arrayUnion(...local.visitedRegions),
-        }),
-      },
-      { merge: true },
-    )
-      .then(() => hasLocal && clearLocal())
-      .catch((e) => console.error('Could not sync profile', e));
+    (async () => {
+      // Keep the best score per region when combining local and account quiz scores.
+      const existing = (await getDoc(ref)).data()?.quizScores ?? {};
+      const bestScores: Record<string, number> = { ...existing };
+      for (const [region, score] of Object.entries(local.quizScores)) {
+        bestScores[region] = Math.max(score, bestScores[region] ?? 0);
+      }
+      await setDoc(
+        ref,
+        {
+          displayName: user.displayName ?? null,
+          email: user.email ?? null,
+          updatedAt: serverTimestamp(),
+          ...(hasLocal && {
+            saved: arrayUnion(...local.saved),
+            visitedPlaces: arrayUnion(...local.visitedPlaces),
+            visitedRegions: arrayUnion(...local.visitedRegions),
+            quizScores: bestScores,
+          }),
+        },
+        { merge: true },
+      );
+      if (hasLocal) clearLocal();
+    })().catch((e) => console.error('Could not sync profile', e));
 
     return onSnapshot(
       ref,
@@ -100,6 +112,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
           saved: d.saved ?? [],
           visitedPlaces: d.visitedPlaces ?? [],
           visitedRegions: d.visitedRegions ?? [],
+          quizScores: d.quizScores ?? {},
         });
       },
       (e) => console.error('Could not load your lists', e),
@@ -127,11 +140,28 @@ export function UserProvider({ children }: { children: ReactNode }) {
     [lists, user],
   );
 
+  const saveQuizScore = useCallback(
+    async (region: string, score: number) => {
+      if (score <= (lists.quizScores[region] ?? -1)) return; // keep the best score only
+      const next = { ...lists, quizScores: { ...lists.quizScores, [region]: score } };
+      setLists(next);
+      if (user && db) {
+        await setDoc(doc(db, 'users', user.uid), { quizScores: { [region]: score }, updatedAt: serverTimestamp() }, { merge: true });
+      } else {
+        writeLocal(next);
+      }
+    },
+    [lists, user],
+  );
+
   const signOut = useCallback(async () => {
     if (auth) await fbSignOut(auth);
   }, []);
 
-  const value = useMemo(() => ({ user, authReady, lists, has, toggle, signOut }), [user, authReady, lists, has, toggle, signOut]);
+  const value = useMemo(
+    () => ({ user, authReady, lists, has, toggle, saveQuizScore, signOut }),
+    [user, authReady, lists, has, toggle, saveQuizScore, signOut],
+  );
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 }
 

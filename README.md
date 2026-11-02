@@ -6,16 +6,20 @@ Built with **Next.js 15**, **TypeScript**, **Tailwind CSS 4**, **next-intl** and
 
 ![Home page](docs/screenshots/home-en.png)
 
-## What's in version 1
+## What's in the site
 
 | Page | URL | What it does |
 |---|---|---|
-| Home | `/en`, `/ar` | Hero, featured places, all 13 regions |
+| Home | `/en`, `/ar` | Hero with search, featured places, all 13 regions |
 | Explore | `/en/regions` | Region cards |
-| Region | `/en/regions/asir` | Places in a region, with category filters |
-| Place | `/en/places/hegra` | Description, best time, map, save and "I've been here" buttons |
+| Region | `/en/regions/asir` | Getting there, region quiz, places with category filters |
+| Place | `/en/places/hegra` | Photo, description, "Plan your visit" (best time, time needed, entry, getting there, nearest airport), tips, map |
 | Map | `/en/map` | Every place on one map |
-| Passport | `/en/passport` | Click regions to colour them in, with progress stats |
+| Search | `/en/search?q=fort` | Search places and regions in English or Arabic |
+| Getting around | `/en/getting-around` | Flights, trains, buses, city transport, driving, visas, airports, distances |
+| Quizzes | `/en/quiz`, `/en/quiz/hail` | 5 questions per region; score 4+ to earn a passport badge |
+| Passport | `/en/passport` | Click regions to colour them in, progress stats, quiz badges |
+| Photo credits | `/en/credits` | Author and licence for every photo |
 | Saved | `/en/saved` | Places the user saved |
 | Sign in | `/en/login` | Google, or email and password |
 | Profile | `/en/profile` | Stats and sign out |
@@ -42,7 +46,7 @@ The web config is already in `.env`. You only need to do this in the [Firebase c
 1. **Authentication → Sign-in method:** turn on **Google** and **Email/Password**.
 2. **Authentication → Settings → Authorized domains:** add your live domain when you deploy (for example `rihla-saudi.vercel.app`). `localhost` is already allowed.
 3. **Firestore Database:** click **Create database** (production mode, a region near your users, e.g. `me-central2`, Dammam).
-4. **Deploy the security rules** in `firestore.rules`. They let each user read and write only their own document:
+4. **Deploy the security rules** in `firestore.rules`. Re-publish them whenever that file changes (version 2 added `quizScores`). They let each user read and write only their own document:
 
    ```bash
    npm install -g firebase-tools
@@ -63,6 +67,7 @@ One document per user at `users/{uid}`:
   "saved": ["hegra", "farasan-islands"],
   "visitedPlaces": ["hegra"],
   "visitedRegions": ["asir", "riyadh"],
+  "quizScores": { "hail": 5, "asir": 3 },
   "updatedAt": "<timestamp>"
 }
 ```
@@ -102,13 +107,28 @@ When you buy a domain, you can point it at GitHub Pages (repo **Settings → Pag
 - **Default language:** `src/i18n/routing.ts` (`defaultLocale: 'ar'` makes the site Arabic-first)
 - **Interface text:** `src/messages/en.json` and `src/messages/ar.json`
 - **Regions:** `src/data/regions.ts`
-- **Places:** `src/data/places.ts`. Copy an existing entry, give it a unique `slug`, and it gets its own page, sitemap entry and map pin automatically.
-- **Photos:** add `image: { src, credit, license }` to a place. Use only photos you own or that are licensed (Wikimedia Commons, official press kits). Until then, places show generated cover art.
+- **Places:** `src/data/places/*.ts`, one file per area. Copy an existing entry and give it a unique `slug`. It automatically gets its own page, a sitemap entry, a map pin and search results.
+- **Cities, airports and train stops:** `src/data/cities.ts`
+- **Transport guide:** `src/data/transport.ts`
+- **Quizzes:** `src/data/quizzes.ts` (`answer` is the index of the correct option; options are shuffled on screen)
+
+### Photos
+
+Photos come from Wikimedia Commons, with their author and licence, through the **Fetch place photos** workflow (`.github/workflows/photos.yml` running `scripts/fetch-photos.mjs`). It runs automatically when places change on `main`, and only for places without a photo.
+
+- **Find a photo for a new place:** give the place a `photoQuery` (several searches can be separated by `|`), then push to `main`.
+- **Choose a specific photo:** add `"slug": "File:Exact name.jpg"` to `scripts/photo-overrides.json`.
+- **Remove a photo:** set it to `null` in the same file. The place then shows its illustrated cover.
+- **Block a bad pick and search again:** add its file name to `scripts/photo-rejects.json`.
+- **Always check new picks by eye.** Search sometimes finds the wrong place.
+- **Use your own photos:** put them in `public/photos/<slug>.webp`, add an entry to `src/data/photos.json`, and set the override to `null` so the workflow doesn't replace it.
 
 ## ⚠️ Before launch
 
 - **Check every fact.** Descriptions are drafts. Verify them against official sources such as visitsaudi.com, the Ministry of Culture and UNESCO.
-- **Check coordinates.** Map pins are approximate.
+- **Check coordinates and distances.** Map pins and "km from city" values are approximate.
+- **Check the transport guide.** Train stations, airports, distances and visa rules (`src/data/transport.ts`, `src/data/cities.ts`) change often.
+- **Check the quiz answers.**
 - **Get the Arabic reviewed.** A native speaker should check all Arabic text.
 - **Map tiles:** the free CARTO tiles in `src/components/PlacesMap.tsx` are for low traffic. For real traffic, move to a paid plan (MapTiler, Stadia or CARTO).
 
@@ -117,9 +137,9 @@ When you buy a domain, you can point it at GitHub Pages (repo **Settings → Pag
 - Region boundaries: [Natural Earth](https://www.naturalearthdata.com/) (public domain), simplified in `src/data/regionPaths.ts`.
 - Map tiles: © OpenStreetMap contributors, © CARTO.
 
-## Next steps (version 2)
+## Next steps
 
-- AI trip planner: a Next.js API route that calls the Claude API, with the key kept server-side in `.env.local`
-- Real photos for every place
-- More places (target: 100+)
-- Transport info, quizzes, and affiliate links for hotels and tours
+- **Phase 4 (later):** AI trip planner. It needs Firebase Cloud Functions (Blaze plan) to keep the Claude API key secret, because GitHub Pages can't run server code.
+- **Phase 6 (later):** affiliate links for hotels and tours.
+- Better photos for the 33 places that still use cover art
+- More places

@@ -7,6 +7,8 @@ import { getPlacesInRegion, getRegion, regions, t } from '@/lib/content';
 import PageHeader from '@/components/PageHeader';
 import PlaceCard from '@/components/PlaceCard';
 import FilteredPlaces from '@/components/FilteredPlaces';
+import RegionTransport from '@/components/RegionTransport';
+import RegionQuizCard from '@/components/RegionQuizCard';
 
 type Params = Promise<{ locale: string; slug: string }>;
 
@@ -54,6 +56,10 @@ export default async function RegionPage({ params }: { params: Params }) {
         subtitle={t(region.summary, locale)}
       />
       <div className="mx-auto max-w-6xl px-4 pt-10">
+        <div className="mb-10 grid gap-4 md:grid-cols-2">
+          <RegionTransport region={region.slug} />
+          <RegionQuizCard region={region.slug} />
+        </div>
         <h2 className="mb-4 font-display text-2xl font-semibold">{tr('places', { count: regionPlaces.length })}</h2>
         {regionPlaces.length === 0 ? (
           <p className="text-muted">{tr('empty')}</p>

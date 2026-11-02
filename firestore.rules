@@ -4,13 +4,14 @@ service cloud.firestore {
   match /databases/{database}/documents {
 
     // Each user has one document: users/{uid}
-    // { displayName, email, saved: [], visitedPlaces: [], visitedRegions: [], updatedAt }
+    // { displayName, email, saved: [], visitedPlaces: [], visitedRegions: [], quizScores: {}, updatedAt }
     match /users/{uid} {
       allow read, delete: if request.auth != null && request.auth.uid == uid;
       allow create, update: if request.auth != null
         && request.auth.uid == uid
         && request.resource.data.keys().hasOnly(
-             ['displayName', 'email', 'saved', 'visitedPlaces', 'visitedRegions', 'updatedAt'])
+             ['displayName', 'email', 'saved', 'visitedPlaces', 'visitedRegions', 'quizScores', 'updatedAt'])
+        && (!('quizScores' in request.resource.data) || (request.resource.data.quizScores is map && request.resource.data.quizScores.size() <= 20))
         && (!('saved' in request.resource.data) || (request.resource.data.saved is list && request.resource.data.saved.size() <= 1000))
         && (!('visitedPlaces' in request.resource.data) || (request.resource.data.visitedPlaces is list && request.resource.data.visitedPlaces.size() <= 1000))
         && (!('visitedRegions' in request.resource.data) || (request.resource.data.visitedRegions is list && request.resource.data.visitedRegions.size() <= 20));
