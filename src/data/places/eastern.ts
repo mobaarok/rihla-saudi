@@ -26,7 +26,7 @@ export const easternPlaces: Place[] = [
       en: 'Take the train from Riyadh or Dammam to Hofuf, then hire a car or taxi to explore the oasis.',
       ar: 'استقل القطار من الرياض أو الدمام إلى الهفوف، ثم استأجر سيارة أو سيارة أجرة لاستكشاف الواحة.',
     },
-    photoQuery: 'Al-Ahsa Oasis palm',
+    photoQuery: 'Al-Ahsa oasis|Al Hasa oasis|Al-Ahsa palm|Al-Ahsa',
   },
   {
     slug: 'al-qarah-mountain',
@@ -112,7 +112,7 @@ export const easternPlaces: Place[] = [
     time: 'half-day',
     cost: 'free',
     tip: TIP_4X4,
-    photoQuery: 'Al-Asfar lake Al-Ahsa',
+    photoQuery: 'Asfar lake|Al Asfar',
   },
   {
     slug: 'ithra',
@@ -175,7 +175,7 @@ export const easternPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Half Moon Bay Saudi Arabia',
+    photoQuery: 'Half Moon Bay Khobar|Half Moon Bay Dammam|Half Moon Bay Saudi',
   },
   {
     slug: 'tarout-castle',
@@ -238,7 +238,7 @@ export const easternPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Fanateer beach Jubail',
+    photoQuery: 'Fanateer|Jubail beach|Jubail corniche',
   },
   {
     slug: 'empty-quarter',

@@ -43,7 +43,7 @@ export const tabukPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Tayeb Ism',
+    photoQuery: 'Tayeb Ism|Tayyib Ism|Wadi Tayyib',
   },
   {
     slug: 'tabuk-castle',
@@ -113,7 +113,7 @@ export const tabukPlaces: Place[] = [
       en: 'Access to the summit area is sometimes restricted. Check locally before you go.',
       ar: 'قد يُقيّد الوصول إلى منطقة القمة أحياناً، فتحقّق محلياً قبل الذهاب.',
     },
-    photoQuery: 'Jabal al-Lawz',
+    photoQuery: 'Jabal al-Lawz snow|Jabal al-Lawz|Jabal Al Lawz',
   },
   {
     slug: 'hisma-desert',
@@ -156,7 +156,7 @@ export const tabukPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Haql beach shipwreck',
+    photoQuery: 'Haql|Georgios G',
   },
   {
     slug: 'umluj',
@@ -181,7 +181,7 @@ export const tabukPlaces: Place[] = [
       en: 'Use licensed boat operators with life jackets, and bring shade and water. There are no facilities on the islands.',
       ar: 'استعن بأصحاب قوارب مرخّصين مع سترات نجاة، واحمل مظلة وماءً، فلا توجد خدمات على الجزر.',
     },
-    photoQuery: 'Umluj island',
+    photoQuery: 'Umluj|Umm Lajj',
   },
   {
     slug: 'al-wajh-old-town',
@@ -202,7 +202,7 @@ export const tabukPlaces: Place[] = [
     access: 'city',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Al Wajh historic',
+    photoQuery: 'Al Wajh|Alwajh',
   },
   {
     slug: 'tayma',
@@ -223,6 +223,6 @@ export const tabukPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Tayma Haddaj well',
+    photoQuery: 'Tayma|Taima|Haddaj',
   },
 ];

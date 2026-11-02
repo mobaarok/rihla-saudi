@@ -224,7 +224,7 @@ export const makkahPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'varies',
-    photoQuery: 'Souq Okaz',
+    photoQuery: 'Okaz|Ukaz',
   },
   {
     slug: 'al-wahbah-crater',
@@ -270,7 +270,7 @@ export const makkahPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Al Rudaf park Taif',
+    photoQuery: 'Rudaf|Ruddaf Taif',
   },
   {
     slug: 'fakieh-aquarium',

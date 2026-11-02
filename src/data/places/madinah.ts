@@ -73,7 +73,7 @@ export const madinahPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Mount Uhud',
+    photoQuery: 'Uhud|Jabal Uhud',
   },
   {
     slug: 'hejaz-railway-madinah',
@@ -202,7 +202,7 @@ export const madinahPlaces: Place[] = [
     time: 'short',
     cost: 'tour',
     tip: TIP_BOOK_ALULA,
-    photoQuery: 'Dadan AlUla lion tombs',
+    photoQuery: 'Dadan|Lion tombs AlUla|Dedan',
   },
   {
     slug: 'maraya',
@@ -266,7 +266,7 @@ export const madinahPlaces: Place[] = [
     time: 'full-day',
     cost: 'tour',
     tip: TIP_4X4,
-    photoQuery: 'Umm Jirsan lava tube',
+    photoQuery: 'Umm Jirsan|Harrat Khaybar',
   },
   {
     slug: 'yanbu-historic-district',

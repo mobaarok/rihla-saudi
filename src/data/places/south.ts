@@ -45,7 +45,7 @@ export const southPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Al Soudah Abha',
+    photoQuery: 'Soudah|Al Sudah|Al Soudah',
   },
   {
     slug: 'al-muftaha-village',
@@ -66,7 +66,7 @@ export const southPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Al-Muftaha Abha',
+    photoQuery: 'Muftaha|Al Muftaha',
   },
   {
     slug: 'shada-palace-abha',
@@ -87,7 +87,7 @@ export const southPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Shada Palace Abha',
+    photoQuery: 'Shada Palace|Shada Abha',
   },
   {
     slug: 'habala',
@@ -133,7 +133,7 @@ export const southPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Raydah Asir',
+    photoQuery: 'Raydah|Rayda Asir|Asir escarpment',
   },
   {
     slug: 'an-namas',
@@ -155,7 +155,7 @@ export const southPlaces: Place[] = [
     time: 'full-day',
     cost: 'free',
     tip: TIP_MOUNTAIN_ROAD,
-    photoQuery: 'Al Namas',
+    photoQuery: 'Namas|Al Namas|An Nimas',
   },
   {
     slug: 'tanomah',
@@ -176,7 +176,7 @@ export const southPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Tanomah',
+    photoQuery: 'Tanomah landscape|Tanumah|Tanomah',
   },
   {
     slug: 'al-birk',
@@ -242,7 +242,7 @@ export const southPlaces: Place[] = [
     time: 'half-day',
     cost: 'ticket',
     tip: TIP_MOUNTAIN_ROAD,
-    photoQuery: 'Dhee Ain village',
+    photoQuery: 'Dhee Ain|Thee Ain|Dhi Ain|Zee Ain',
   },
   {
     slug: 'raghadan-forest',
@@ -263,7 +263,7 @@ export const southPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Raghadan forest Al Baha',
+    photoQuery: 'Raghadan|Al Baha forest',
   },
   {
     slug: 'shada-mountain',
@@ -285,7 +285,7 @@ export const southPlaces: Place[] = [
     time: 'full-day',
     cost: 'free',
     tip: TIP_MOUNTAIN_ROAD,
-    photoQuery: 'Jabal Shada',
+    photoQuery: 'Shada mountain|Jabal Shada|Shada Al Baha',
   },
   {
     slug: 'al-atawlah-village',
@@ -375,7 +375,7 @@ export const southPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Dosariyah castle Jazan',
+    photoQuery: 'Dosariyah|Dawsariyah|Jazan castle',
   },
   {
     slug: 'jazan-heritage-village',
@@ -396,7 +396,7 @@ export const southPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Jazan heritage village',
+    photoQuery: 'Jazan heritage|Jizan heritage|Jazan village',
   },
 
   // ---------- Najran ----------
@@ -441,7 +441,7 @@ export const southPlaces: Place[] = [
     access: 'guided',
     time: 'full-day',
     cost: 'tour',
-    photoQuery: 'Hima Najran rock art',
+    photoQuery: 'Hima rock|Hima Najran|Hima Cultural',
   },
   {
     slug: 'al-aan-palace',
@@ -462,7 +462,7 @@ export const southPlaces: Place[] = [
     access: 'car',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Al-Aan Palace Najran',
+    photoQuery: 'Aan Palace|Al-Aan|Saadan palace|Najran palace',
   },
   {
     slug: 'najran-valley-dam',

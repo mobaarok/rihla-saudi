@@ -48,7 +48,7 @@ export const riyadhPlaces: Place[] = [
     time: 'half-day',
     cost: 'varies',
     tip: TIP_4X4,
-    photoQuery: 'Edge of the World Riyadh Tuwaiq',
+    photoQuery: 'Edge of the World Saudi|Jebel Fihrayn|Jabal Fihrayn|Tuwaiq escarpment',
   },
   {
     slug: 'masmak-fortress',
@@ -94,7 +94,7 @@ export const riyadhPlaces: Place[] = [
       en: 'Combine it with nearby Shaqra for a full day trip from Riyadh.',
       ar: 'اجمع زيارتها مع شقراء القريبة في رحلة يوم كامل من الرياض.',
     },
-    photoQuery: 'Ushaiqer heritage village',
+    photoQuery: 'Ushaiger|Ushaiqer|Ushaiqir',
   },
   {
     slug: 'national-museum-riyadh',
@@ -249,7 +249,7 @@ export const riyadhPlaces: Place[] = [
     access: 'car',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Wadi Namar Riyadh',
+    photoQuery: 'Wadi Namar|Namar',
   },
   {
     slug: 'shaqra-old-town',
@@ -270,7 +270,7 @@ export const riyadhPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Shaqra heritage',
+    photoQuery: 'Shaqra|Shaqraa',
   },
   {
     slug: 'al-ghat-heritage-village',

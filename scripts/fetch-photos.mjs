@@ -9,6 +9,9 @@
 // To choose a specific photo, add it to scripts/photo-overrides.json:
 //   { "hegra": "File:Exact name on Commons.jpg" }
 // To remove a photo, set it to null: { "hegra": null }
+// To block a bad pick and search again, list it in scripts/photo-rejects.json:
+//   { "hegra": ["File:Wrong photo.jpg"] }
+// A place's photoQuery can hold several searches separated by "|"; they are tried in order.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,6 +23,7 @@ const OUT_DIR = path.join(ROOT, 'public/photos');
 const MANIFEST = path.join(ROOT, 'src/data/photos.json');
 const OVERRIDES = path.join(ROOT, 'scripts/photo-overrides.json');
 const CANDIDATES = path.join(ROOT, 'scripts/photo-candidates.json');
+const REJECTS = path.join(ROOT, 'scripts/photo-rejects.json');
 const API = 'https://commons.wikimedia.org/w/api.php';
 const UA = 'RihlaSaudiPhotoBot/1.0 (https://github.com/mobaarok/rihla-saudi)';
 const FORCE = process.argv.includes('--force');
@@ -97,6 +101,16 @@ async function byTitle(title) {
   return toCandidate(data.query?.pages?.[0] ?? {});
 }
 
+const STOP = new Set(['saudi', 'arabia', 'the', 'and', 'old', 'park', 'village', 'heritage', 'historic', 'town', 'city']);
+
+/** The file name must mention the place (Arabic-only file names are allowed through). */
+function relevant(c, query) {
+  const title = c.title.toLowerCase();
+  if (!/[a-z]/.test(title.replace(/^file:|\.(jpe?g|png|webp)$/g, ''))) return true;
+  const words = query.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 4 && !STOP.has(w));
+  return words.length === 0 || words.some((w) => title.includes(w.slice(0, 5)));
+}
+
 function usable(c) {
   return (
     c &&
@@ -129,6 +143,7 @@ async function main() {
   const manifest = readJson(MANIFEST, {});
   const overrides = readJson(OVERRIDES, {});
   const candidates = readJson(CANDIDATES, {});
+  const rejects = readJson(REJECTS, {});
   const queries = readQueries();
   const known = new Set(queries.map((q) => q.slug));
   let added = 0;
@@ -141,6 +156,11 @@ async function main() {
       fs.rmSync(path.join(OUT_DIR, `${slug}.webp`), { force: true });
       continue;
     }
+    const blocked = new Set(rejects[slug] ?? []);
+    if (manifest[slug] && blocked.has(manifest[slug].title)) {
+      delete manifest[slug];
+      fs.rmSync(path.join(OUT_DIR, `${slug}.webp`), { force: true });
+    }
     const wantsOverride = typeof override === 'string' && manifest[slug]?.title !== override;
     if (manifest[slug] && !FORCE && !wantsOverride) continue;
 
@@ -150,8 +170,13 @@ async function main() {
         pick = await byTitle(override);
         if (!pick || !OK_LICENSE.test(pick.license)) throw new Error(`override not usable: ${override} (${pick?.license})`);
       } else {
-        const found = await search(query);
-        const ok = found.filter(usable);
+        const ok = [];
+        for (const q of query.split('|').map((x) => x.trim()).filter(Boolean)) {
+          const found = await search(q);
+          ok.push(...found.filter((c) => usable(c) && relevant(c, q) && !blocked.has(c.title) && !ok.some((o) => o.title === c.title)));
+          if (ok.length) break;
+          await sleep(300);
+        }
         candidates[slug] = ok.slice(0, 6).map((c) => ({ title: c.title, license: c.license }));
         pick = ok[0];
       }

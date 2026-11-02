@@ -26,7 +26,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Buraydah dates market',
+    photoQuery: 'Buraydah dates|Qassim dates|Buraydah',
   },
   {
     slug: 'unaizah-old-town',
@@ -47,7 +47,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'city',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Unaizah heritage',
+    photoQuery: 'Unaizah|Onaizah',
   },
   {
     slug: 'al-shinanah-tower',
@@ -115,7 +115,7 @@ export const centralNorthPlaces: Place[] = [
     time: 'full-day',
     cost: 'tour',
     tip: TIP_4X4,
-    photoQuery: 'Shuwaymis rock art',
+    photoQuery: 'Shuwaymis|Shuwaimis',
   },
   {
     slug: 'qishlah-palace',
@@ -136,7 +136,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'city',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Qishlah Palace Hail',
+    photoQuery: 'Qishla Hail|Qishlah|Hail castle',
   },
   {
     slug: 'aarif-fort',
@@ -199,7 +199,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Darb Zubaydah',
+    photoQuery: 'Fayd Hail|Faid Hail|Fayd',
   },
   {
     slug: 'nafud-desert',
@@ -221,7 +221,7 @@ export const centralNorthPlaces: Place[] = [
     time: 'full-day',
     cost: 'varies',
     tip: TIP_4X4,
-    photoQuery: 'Nafud desert',
+    photoQuery: 'Nafud dunes|Nafud desert|An Nafud',
   },
 
   // ---------- Al Jawf ----------
@@ -265,7 +265,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'car',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Dumat al-Jandal lake',
+    photoQuery: 'Dumat Al-Jandal lake|Dumat al-Jandal',
   },
   {
     slug: 'zabal-castle',
@@ -328,7 +328,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'car',
     time: 'short',
     cost: 'free',
-    photoQuery: 'Kaf Palace Qurayyat',
+    photoQuery: 'Kaf palace|Qurayyat',
   },
 
   // ---------- Northern Borders ----------
@@ -351,7 +351,7 @@ export const centralNorthPlaces: Place[] = [
     access: 'car',
     time: 'half-day',
     cost: 'free',
-    photoQuery: 'Lina Saudi Arabia',
+    photoQuery: 'Lina Rafha|Linah',
   },
   {
     slug: 'darb-zubaydah-rafha',
@@ -376,6 +376,6 @@ export const centralNorthPlaces: Place[] = [
       en: 'Sites are spread out and poorly signposted. Ask locally or hire a guide.',
       ar: 'المواقع متباعدة وقليلة اللوحات الإرشادية، فاسأل الأهالي أو استعن بمرشد.',
     },
-    photoQuery: 'Zubaydah trail birka',
+    photoQuery: 'Zubaydah Rafha|Darb Zubaydah Rafha|Zubayda',
   },
 ];
