@@ -71,9 +71,17 @@ One document per user at `users/{uid}`:
 
 The site is exported as static files (`npm run build` writes them to `out/`), so it can be hosted anywhere.
 
-### GitHub Pages (set up)
+### GitHub Pages (set up, `gh-pages` branch)
 
-Every push to `main` builds and publishes the site with `.github/workflows/deploy.yml`:
+Work on `main`, then bring the changes into this branch to publish them:
+
+```bash
+git checkout gh-pages
+git merge main
+git push
+```
+
+This `gh-pages` branch holds the GitHub Pages version: the same site as `main`, plus static export (no middleware), a root page that picks the language, and the `/rihla-saudi` base path. Every push to `gh-pages` builds and publishes it with `.github/workflows/deploy.yml`:
 
 **https://mobaarok.github.io/rihla-saudi/**
 
