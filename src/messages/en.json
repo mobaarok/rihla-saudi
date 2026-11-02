@@ -48,7 +48,19 @@
     "visited": "Visited",
     "more": "More in {name}",
     "approx": "Map location is approximate.",
-    "verify": "Details can change. Check opening times, prices and access with official sources before you travel."
+    "verify": "Details can change. Check opening times, prices and access with official sources before you travel.",
+    "plan": "Plan your visit",
+    "timeNeeded": "Time needed",
+    "cost": "Entry",
+    "gettingThere": "Getting there",
+    "inCity": "In {city}",
+    "fromCity": "About {km} km from {city}",
+    "nearestAirport": "Nearest airport",
+    "tip": "Good to know",
+    "muslimsOnly": "Muslims only",
+    "muslimsOnlyNote": "Only Muslims may enter this site.",
+    "photoBy": "Photo: {credit} · {license} · via Wikimedia Commons",
+    "transportLink": "How to get around Saudi Arabia"
   },
   "category": {
     "all": "All",
@@ -57,7 +69,8 @@
     "mountains": "Mountains",
     "coast": "Coast",
     "city": "City",
-    "culture": "Culture"
+    "culture": "Culture",
+    "religious": "Religious sites"
   },
   "map": {
     "title": "Map of places",
@@ -111,5 +124,24 @@
   "notFound": {
     "title": "Page not found",
     "back": "Back to home"
+  },
+  "time": {
+    "short": "1–2 hours",
+    "half-day": "Half a day",
+    "full-day": "A full day",
+    "multi-day": "2 days or more"
+  },
+  "cost": {
+    "free": "Free",
+    "ticket": "Ticket needed",
+    "tour": "Guided tour (paid)",
+    "varies": "Depends on the activity"
+  },
+  "access": {
+    "city": "In town: taxi, ride-hailing or car",
+    "car": "By car",
+    "4x4": "4x4 or tour needed",
+    "guided": "Only with a guided tour",
+    "ferry": "By ferry"
   }
 }
