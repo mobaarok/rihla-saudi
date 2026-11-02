@@ -6,6 +6,13 @@ A bilingual (English + Arabic) travel guide website for Saudi Arabia, inspired b
 - Firebase project: `rihla-saudi` (Auth: Google + Email/Password; Firestore; rules in `firestore.rules`)
 - "Rihla Saudi" is still a working name (change it in `src/config/site.ts`). The site is English-first (`defaultLocale` in `src/i18n/routing.ts`).
 
+## Working with the owner
+
+- The owner works in Claude Code on the web (claude.ai/code). Each session starts by selecting the `mobaarok/rihla-saudi` repo (branch `main`). The cloud container is temporary: everything must be committed and pushed to GitHub to be kept.
+- Start of a session: read this file, check `git log --oneline -10` and `git status`, and briefly confirm the current state before starting work.
+- End of a feature: update the **Progress** section of this file (and README if user-facing) so the next session knows what changed.
+- Ask the owner before big decisions (new phase, new paid service, renaming the site). For small choices, pick a sensible default and say so.
+
 ## Owner's rules (always follow)
 
 - **Do not use the owner's Claude API key or credit** to build or test anything. It is reserved for the AI trip planner (phase 4).
@@ -90,6 +97,8 @@ Before committing: `npx tsc --noEmit`, `npm run lint`, `npm run build`, and chec
 ## Progress
 
 **Version 1 (done):** regions, place pages, map, passport (SVG), saved places, Google/email sign-in, SEO, English/Arabic.
+
+**Setup done by the owner:** Firebase Auth (Google + Email/Password) enabled, Firestore created, `firestore.rules` published (latest version, including `quizScores`), `mobaarok.github.io` added to Firebase authorized domains, GitHub Pages source = GitHub Actions, `github-pages` environment allows the `gh-pages` branch, Claude GitHub App connected (push works).
 
 **Version 2 (done):**
 - Phase 1: place details (time needed, entry, getting there, nearest airport, tips, Muslims-only badge), Wikimedia photos with credits page (67 of 100 places have a checked photo; the rest use cover art), search (en/ar, synonyms).
